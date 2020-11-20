@@ -15,7 +15,7 @@ public class helloController {
     @GetMapping("/hello")
     public String hello() {
         log.info("inside hello world");
-        return "Hi there!!!";
+        return "Hii there!!!";
     }
 
     @PostMapping("/hello")
