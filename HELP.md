@@ -48,3 +48,17 @@ curl --location --request POST 'http://localhost:8080/api/hello' \
 curl --location --request GET 'http://localhost:8080/api/hello' \
 --header 'Content-Type: application/json' \
 --header 'auth-key: 12345'
+
+# ################################################################
+#1. Open the Settings --> Build-Execution-Deployment --> Compiler
+
+    and enable the Make Project Automatically.
+
+2. Then press ctrl+shift+A and search for the registry. In the registry, make the following configuration enabled.
+
+compiler.automake.allow.when.app.running
+
+3. Restart the IDE.
+
+ref:https://dzone.com/articles/spring-boot-application-live-reload-hot-swap-with
+# ###########################################3
